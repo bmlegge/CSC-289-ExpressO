@@ -22,15 +22,14 @@ namespace ExpressO.RazorPages.Repository
         {
             var connection = _configuration.GetSection("ConnectionStrings").GetSection("Default").Value;
             return connection;
-
         }
 
         public List<Login> GetList()
         {
-            var connectionString = GetConnection();
+            //var connectionString = GetConnection();
             List<Login> logins = new List<Login>();
 
-            using(var cnn = new SQLiteConnection(connectionString))
+            using(var cnn = new SQLiteConnection(_configuration.GetConnectionString("Default")))
             {
                 try
                 {
