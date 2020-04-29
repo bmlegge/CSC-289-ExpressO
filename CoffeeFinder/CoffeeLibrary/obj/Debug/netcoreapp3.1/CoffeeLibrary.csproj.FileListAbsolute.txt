@@ -1,0 +1,8 @@
+C:\Users\Null\source\repos\CoffeeFinder\CoffeeLibrary\bin\Debug\netcoreapp3.1\CoffeeLibrary.deps.json
+C:\Users\Null\source\repos\CoffeeFinder\CoffeeLibrary\bin\Debug\netcoreapp3.1\CoffeeLibrary.dll
+C:\Users\Null\source\repos\CoffeeFinder\CoffeeLibrary\bin\Debug\netcoreapp3.1\CoffeeLibrary.pdb
+C:\Users\Null\source\repos\CoffeeFinder\CoffeeLibrary\obj\Debug\netcoreapp3.1\CoffeeLibrary.csprojAssemblyReference.cache
+C:\Users\Null\source\repos\CoffeeFinder\CoffeeLibrary\obj\Debug\netcoreapp3.1\CoffeeLibrary.AssemblyInfoInputs.cache
+C:\Users\Null\source\repos\CoffeeFinder\CoffeeLibrary\obj\Debug\netcoreapp3.1\CoffeeLibrary.AssemblyInfo.cs
+C:\Users\Null\source\repos\CoffeeFinder\CoffeeLibrary\obj\Debug\netcoreapp3.1\CoffeeLibrary.dll
+C:\Users\Null\source\repos\CoffeeFinder\CoffeeLibrary\obj\Debug\netcoreapp3.1\CoffeeLibrary.pdb

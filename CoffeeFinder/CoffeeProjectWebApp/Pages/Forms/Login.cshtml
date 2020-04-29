@@ -1,0 +1,14 @@
+﻿@page
+@model CoffeeProjectWebApp.LoginModel
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+<h1>Login</h1>
+
+<form method="post">
+    <input type="text" asp-for="Login.UserName" placeholder="UserName" />
+    <input type="text" asp-for="Login.PassWord" placeholder="Password" />
+    <button type="submit">Submit</button>
+
+</form>
