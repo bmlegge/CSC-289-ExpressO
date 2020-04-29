@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Ftcc\\Spring20\\CSC-289\\Projects\\ExpressO.RazorPages\\ExpressO.RazorPages\\ExpressO.RazorPages.csproj": {}
+    "E:\\Ftcc\\Spring20\\CSC-289\\Projects\\CSC-289-ExpressO\\ExpressO.RazorPages\\ExpressO.RazorPages\\ExpressO.RazorPages.csproj": {}
   },
   "projects": {
-    "E:\\Ftcc\\Spring20\\CSC-289\\Projects\\ExpressO.RazorPages\\ExpressO.RazorPages\\ExpressO.RazorPages.csproj": {
+    "E:\\Ftcc\\Spring20\\CSC-289\\Projects\\CSC-289-ExpressO\\ExpressO.RazorPages\\ExpressO.RazorPages\\ExpressO.RazorPages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Ftcc\\Spring20\\CSC-289\\Projects\\ExpressO.RazorPages\\ExpressO.RazorPages\\ExpressO.RazorPages.csproj",
+        "projectUniqueName": "E:\\Ftcc\\Spring20\\CSC-289\\Projects\\CSC-289-ExpressO\\ExpressO.RazorPages\\ExpressO.RazorPages\\ExpressO.RazorPages.csproj",
         "projectName": "ExpressO.RazorPages",
-        "projectPath": "E:\\Ftcc\\Spring20\\CSC-289\\Projects\\ExpressO.RazorPages\\ExpressO.RazorPages\\ExpressO.RazorPages.csproj",
+        "projectPath": "E:\\Ftcc\\Spring20\\CSC-289\\Projects\\CSC-289-ExpressO\\ExpressO.RazorPages\\ExpressO.RazorPages\\ExpressO.RazorPages.csproj",
         "packagesPath": "C:\\Users\\Brandon\\.nuget\\packages\\",
-        "outputPath": "E:\\Ftcc\\Spring20\\CSC-289\\Projects\\ExpressO.RazorPages\\ExpressO.RazorPages\\obj\\",
+        "outputPath": "E:\\Ftcc\\Spring20\\CSC-289\\Projects\\CSC-289-ExpressO\\ExpressO.RazorPages\\ExpressO.RazorPages\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
