@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeProjectWebApp\\CoffeeProjectWebApp.csproj": {}
+    "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeProjectWebApp\\CoffeeProjectWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj": {
+    "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj",
         "projectName": "CoffeeLibrary",
-        "projectPath": "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj",
+        "projectPath": "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj",
         "packagesPath": "C:\\Users\\Null\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeLibrary\\obj\\",
+        "outputPath": "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -61,14 +61,14 @@
         }
       }
     },
-    "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeProjectWebApp\\CoffeeProjectWebApp.csproj": {
+    "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeProjectWebApp\\CoffeeProjectWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeProjectWebApp\\CoffeeProjectWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeProjectWebApp\\CoffeeProjectWebApp.csproj",
         "projectName": "CoffeeProjectWebApp",
-        "projectPath": "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeProjectWebApp\\CoffeeProjectWebApp.csproj",
+        "projectPath": "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeProjectWebApp\\CoffeeProjectWebApp.csproj",
         "packagesPath": "C:\\Users\\Null\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeProjectWebApp\\obj\\",
+        "outputPath": "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeProjectWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -89,8 +89,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj": {
-                "projectPath": "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj"
+              "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj": {
+                "projectPath": "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj"
               }
             }
           }

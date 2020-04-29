@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj",
       "projectName": "CoffeeLibrary",
-      "projectPath": "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj",
+      "projectPath": "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeLibrary\\CoffeeLibrary.csproj",
       "packagesPath": "C:\\Users\\Null\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Null\\source\\repos\\CoffeeFinder\\CoffeeLibrary\\obj\\",
+      "outputPath": "C:\\Users\\Null\\Documents\\GitHub\\CSC-289-ExpressO\\CoffeeFinder\\CoffeeLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
