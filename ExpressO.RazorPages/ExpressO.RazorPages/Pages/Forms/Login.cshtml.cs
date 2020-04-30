@@ -28,7 +28,6 @@ namespace ExpressO.Pages.Forms
         [BindProperty]
         public Login Login { get; set; }
 
-
         public IActionResult OnPost()
         {
             if (!ModelState.IsValid)
@@ -37,6 +36,11 @@ namespace ExpressO.Pages.Forms
             }
 
             return RedirectToPage("/Index");
+        }
+
+        public IActionResult OnPostSignup()
+        {
+            return RedirectToPage("Signup");
         }
     }
 }

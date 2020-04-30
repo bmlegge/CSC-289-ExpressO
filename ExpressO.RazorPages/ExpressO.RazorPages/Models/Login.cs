@@ -21,5 +21,9 @@ namespace ExpressO.RazorPages.Models
         [Required(ErrorMessage = "Must enter a password")]
         [Compare("Login.Password", ErrorMessage = "Passwords must match!")]
         public string PasswordConfirmation { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public string Admin { get; set; }
     }
 }

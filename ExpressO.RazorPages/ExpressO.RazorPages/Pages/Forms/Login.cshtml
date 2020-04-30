@@ -24,7 +24,9 @@
                 <button type="submit">Login</button>
             </div>
             <div class="form-group">
-                <a asp-page="UserSignUp">Create new account</a>
+                <form method="post" asp-page="Login">
+                    <input type="submit" value="Create new account" asp-page-handler="Signup" />
+                </form>
             </div>
         </form>
     </div>
