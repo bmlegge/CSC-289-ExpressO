@@ -1,5 +1,5 @@
 ﻿@page
-@model CoffeeProjectWebApp.SignupPageModel
+@model CoffeeProjectWebApp.SignupModel
 @{
     ViewData["Title"] = "Signup";
 }
@@ -8,7 +8,7 @@
 
 <form method="post">
     <input type="text" asp-for="CreateUser.UserName" placeholder="UserName" />
-    <input type="text" asp-for="CreateUser.Password" placeholder="Password" />
+    <input type="text" asp-for="CreateUser.PassWord" placeholder="Password" />
     <input type="text" asp-for="CreateUser.FirstName" placeholder="First Name" />
     <input type="text" asp-for="CreateUser.LastName" placeholder="Last Name" />
     <button type="submit">Submit</button>

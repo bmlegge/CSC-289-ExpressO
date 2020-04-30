@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CoffeeProjectWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using CoffeeProjectWebApp.Models;
+
 namespace CoffeeProjectWebApp
 {
-    public class SignupPageModel : PageModel
+    public class SignupModel : PageModel
     {
-
         [BindProperty]
         public SignUpInformation CreateUser { get; set; }
         public void OnGet()

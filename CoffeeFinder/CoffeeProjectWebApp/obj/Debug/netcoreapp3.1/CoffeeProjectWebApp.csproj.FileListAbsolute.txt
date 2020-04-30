@@ -223,4 +223,3 @@ C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\CoffeeFinder\CoffeeProjectWebApp
 C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\CoffeeFinder\CoffeeProjectWebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Forms\Stores.cshtml.g.cs
 C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\CoffeeFinder\CoffeeProjectWebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Forms\AboutPage.cshtml.g.cs
 C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\CoffeeFinder\CoffeeProjectWebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Forms\Signup.cshtml.g.cs
-C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\CoffeeFinder\CoffeeProjectWebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Forms\SignupPage.cshtml.g.cs
