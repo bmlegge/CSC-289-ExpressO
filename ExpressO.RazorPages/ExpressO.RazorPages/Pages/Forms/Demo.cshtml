@@ -1,0 +1,31 @@
+﻿@page
+@model ExpressO.RazorPages.Pages.Forms.DemoModel
+@{
+    ViewData["Title"] = "Demo";
+}
+
+<h2>Demo</h2>
+
+
+<div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var i in Model.loginList)
+                {
+                    <tr>
+                        <th>@i.UserName</th>
+                        <th>@i.Password</th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
