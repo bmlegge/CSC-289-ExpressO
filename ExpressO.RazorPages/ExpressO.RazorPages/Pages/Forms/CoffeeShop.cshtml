@@ -1,0 +1,26 @@
+﻿@page
+@model ExpressO.RazorPages.Pages.Forms.CoffeeShopsModel
+@{
+    ViewData["Title"] = "CoffeeShops";
+}
+
+<h2>CoffeeShop</h2>
+
+
+<div>
+    <div>
+        <table>
+            <tbody>
+                @foreach (var i in Model.CoffeeShopList)
+                {
+                <tr>
+                    <th>@i.Name</th>
+                    <th>@i.Address, @i.City</th>
+                    <th>@i.Phone</th>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
