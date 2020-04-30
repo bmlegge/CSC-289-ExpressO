@@ -14,6 +14,17 @@ namespace ExpressO.RazorPages.Models
         public string State { get; set; }
         public string Zip { get; set; }
         public string Phone { get; set; }
+        public string CoffeeBlack { get; set; }
+        public string Latte { get; set; }
+        public string Cappuccino { get; set; }
+        public string Expresso { get; set; }
+        public string Macchiato { get; set; }
+        public string Mocha { get; set; }
+        public string IcedCoffee { get; set; }
+        public string IcedExpresso { get; set; }
+        public string ColdBrew { get; set; }
+        public string Frappuccino { get; set; }
+
 
     }
 }

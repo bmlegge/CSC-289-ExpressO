@@ -5,29 +5,39 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ExpressO.RazorPages.Models;
+using ExpressO.RazorPages.Repository;
 
 namespace ExpressO.RazorPages
 {
     public class SignupModel : PageModel
     {
-        public void OnGet()
-        {
+        ILoginRepository _loginRepository;
 
+        public SignupModel(ILoginRepository loginRepository)
+        {
+            _loginRepository = loginRepository;
         }
 
         [BindProperty]
         public Login Login { get; set; }
 
+        public void OnGet()
+        {
+
+        }
+
         public IActionResult OnPost()
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return Page();
+                var count = _loginRepository.Add(Login);
+                if (count > 0)
+                {
+                    return RedirectToPage("/Forms/CoffeeShop");
+                }
             }
 
-            // TODO Place users into the database
-
-            return RedirectToPage("/Index");
+            return Page() ;
         }
     }
 }

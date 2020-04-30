@@ -30,17 +30,22 @@ namespace ExpressO.Pages.Forms
 
         public IActionResult OnPost()
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return Page();
+                return RedirectToPage("/Forms/CoffeeShop");
             }
 
-            return RedirectToPage("/Index");
+            return Page();
         }
 
         public IActionResult OnPostSignup()
         {
             return RedirectToPage("Signup");
         }
+
+        //------------------------------------------------------------------------------------------------------------
+        //TODO figure out this line of code to take user input and search database for matching username and password.
+        //(LoginList.SingleOrDefault(x => x.UserName == Login.UserName)
+        //------------------------------------------------------------------------------------------------------------
     }
 }

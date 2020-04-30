@@ -17,6 +17,37 @@ namespace ExpressO.RazorPages.Repository
         {
             _configuration = configuration;
         }
+
+        public int Add(Login login)
+        {   
+            using (var cnn = new SQLiteConnection(_configuration.GetConnectionString("Default")))
+            {
+                try
+                {
+                    cnn.Open();
+                    var q = cnn.Execute( "INSERT INTO Login(UserName, Password, FirstName, LastName, Email) " +
+                                "VALUES(@UserName, @Password, @FirstName, @LastName, @Email)", 
+                                new
+                                {
+                                    UserName = login.UserName,
+                                    Password = login.Password,
+                                    FirstName = login.FirstName,
+                                    LastName = login.LastName,
+                                    Email = login.Email
+                                });
+                    return q;
+                }
+                catch(Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    cnn.Close();
+                }
+            }
+        }
+
         public List<Login> GetList()
         {
             List<Login> logins = new List<Login>();
@@ -26,8 +57,7 @@ namespace ExpressO.RazorPages.Repository
                 try
                 {
                     cnn.Open();
-                    var query = "SELECT * FROM Login";
-                    logins = cnn.Query<Login>(query).ToList();
+                    logins = cnn.Query<Login>("SELECT * FROM Login").ToList();
                 }
                 catch(Exception ex)
                 {

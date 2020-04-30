@@ -8,6 +8,7 @@ namespace ExpressO.RazorPages.Repository
 {
     public interface ILoginRepository
     {
+        int Add(Login login);
         List<Login> GetList();
     }
 }
