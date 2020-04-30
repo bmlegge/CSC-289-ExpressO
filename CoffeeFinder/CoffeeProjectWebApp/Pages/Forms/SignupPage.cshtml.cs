@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CoffeeProjectWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-
+using CoffeeProjectWebApp.Models;
 namespace CoffeeProjectWebApp
 {
-    public class LoginModel : PageModel
+    public class SignupPageModel : PageModel
     {
+
         [BindProperty]
-        public LoginInformation Login { get; set; }
+        public SignUpInformation CreateUser { get; set; }
         public void OnGet()
         {
 
@@ -24,12 +24,9 @@ namespace CoffeeProjectWebApp
                 return Page();
             }
 
-            return RedirectToPage("/Index", new { UserName = "Coffee Finder " + Login.UserName  });
-        }
-        
-        public IActionResult OnPostSignup()
-        {
-            return RedirectToPage("Signup");
+            // TODO Create Database Library to Save Model to Database
+
+            return RedirectToPage("/Index");
         }
     }
 }
