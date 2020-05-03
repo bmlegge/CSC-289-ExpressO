@@ -56,7 +56,6 @@ C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\ExpressO.RazorPages\ExpressO.Raz
 C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\ExpressO.RazorPages\ExpressO.RazorPages\obj\Debug\netcoreapp2.1\Razor\Pages\Contact.cshtml.g.cs
 C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\ExpressO.RazorPages\ExpressO.RazorPages\obj\Debug\netcoreapp2.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\ExpressO.RazorPages\ExpressO.RazorPages\obj\Debug\netcoreapp2.1\Razor\Pages\Forms\CoffeeShop.cshtml.g.cs
-C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\ExpressO.RazorPages\ExpressO.RazorPages\obj\Debug\netcoreapp2.1\Razor\Pages\Forms\Demo.cshtml.g.cs
 C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\ExpressO.RazorPages\ExpressO.RazorPages\obj\Debug\netcoreapp2.1\Razor\Pages\Forms\Login.cshtml.g.cs
 C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\ExpressO.RazorPages\ExpressO.RazorPages\obj\Debug\netcoreapp2.1\Razor\Pages\Index.cshtml.g.cs
 C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\ExpressO.RazorPages\ExpressO.RazorPages\obj\Debug\netcoreapp2.1\Razor\Pages\Privacy.cshtml.g.cs
