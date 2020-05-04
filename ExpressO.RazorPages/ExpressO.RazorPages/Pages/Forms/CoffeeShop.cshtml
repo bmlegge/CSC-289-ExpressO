@@ -6,21 +6,21 @@
 
 <h2>CoffeeShop</h2>
 
-
-<div>
-    <div>
-        <table>
-            <tbody>
-                @foreach (var i in Model.CoffeeShopList)
-                {
-                <tr>
-                    <th>@i.Name</th>
-                    <th>@i.Address, @i.City</th>
-                    <th>@i.Phone</th>
-                </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-</div>
+@foreach (var i in Model.CoffeeShopList)
+{
+    <table>
+        <tr>
+            <td>@Html.DisplayFor(m => i.Name)</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayFor(m => i.Address), @Html.DisplayFor(m => i.City)</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayFor(m => i.Phone)</td>
+        </tr>
+        <tr>
+            <td><a asp-page="/Forms/Menu" asp-route-id="@i.Id">Menu</a></td>
+        </tr>
+    </table>
+}
 

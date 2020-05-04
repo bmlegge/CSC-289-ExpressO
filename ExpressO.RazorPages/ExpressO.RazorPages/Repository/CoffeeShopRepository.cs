@@ -42,5 +42,30 @@ namespace ExpressO.RazorPages.Repository
                 return coffeeShops;
             }
         }
+
+        public CoffeeShop GetShop(int id)
+        {
+            CoffeeShop coffeeShop = new CoffeeShop();
+
+            using (var cnn = new SQLiteConnection(_configuration.GetConnectionString("Default")))
+            {
+                try
+                {
+                    cnn.Open();
+                    var query = "SELECT * FROM CoffeeShops WHERE Id =" + id;
+                    coffeeShop = cnn.Query<CoffeeShop>(query).FirstOrDefault();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    cnn.Close();
+                }
+
+                return coffeeShop;
+            }
+        }
     }
 }

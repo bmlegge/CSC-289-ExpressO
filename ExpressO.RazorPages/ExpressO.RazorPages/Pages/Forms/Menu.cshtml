@@ -1,0 +1,38 @@
+﻿@page
+@model ExpressO.RazorPages.Pages.Forms.MenuModel
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<h2>Menu</h2>
+
+<div>
+    <div>
+        <table>
+            <tr>
+                <th>Black Coffeee</th>
+                <th>Latte</th>
+                <th>Cappuccino</th>
+                <th>Expresso</th>
+                <th>Macchiato</th>
+                <th>Mocha</th>
+                <th>Iced Coffee</th>
+                <th>Iced Expresso</th>
+                <th>Cold Brew</th>
+                <th>Frappuccino</th>
+            </tr>
+            <tr>
+                <td>@Model.Menu.CoffeeBlack</td>
+                <td>@Model.Menu.Latte</td>
+                <td>@Model.Menu.Cappuccino</td>
+                <td>@Model.Menu.Expresso</td>
+                <td>@Model.Menu.Macchiato</td>
+                <td>@Model.Menu.Mocha</td>
+                <td>@Model.Menu.IcedCoffee</td>
+                <td>@Model.Menu.IcedExpresso</td>
+                <td>@Model.Menu.ColdBrew</td>
+                <td>@Model.Menu.Frappuccino</td>
+            </tr>
+        </table>
+    </div>
+</div>
