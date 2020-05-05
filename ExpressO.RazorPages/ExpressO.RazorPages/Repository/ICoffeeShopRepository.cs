@@ -8,6 +8,7 @@ namespace ExpressO.RazorPages.Repository
 {
     public interface ICoffeeShopRepository
     {
+        List<CoffeeShop> Search(string searchTerm);
         List<CoffeeShop> GetList();
         CoffeeShop GetShop(int id);
     }

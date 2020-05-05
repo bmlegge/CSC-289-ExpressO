@@ -24,9 +24,12 @@ namespace ExpressO.RazorPages.Pages.Forms
         [BindProperty]
         public CoffeeShop CoffeeShops { get; set; }
 
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
+
         public void OnGet()
         {
-            CoffeeShopList = _coffeeShopRepository.GetList();
+            CoffeeShopList = _coffeeShopRepository.Search(SearchTerm);
         }
     }
 }

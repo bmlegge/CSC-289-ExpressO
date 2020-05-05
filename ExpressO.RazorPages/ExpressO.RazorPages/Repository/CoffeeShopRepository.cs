@@ -67,5 +67,34 @@ namespace ExpressO.RazorPages.Repository
                 return coffeeShop;
             }
         }
+
+        public List<CoffeeShop> Search(string searchTerm)
+        {
+            List<CoffeeShop> coffeeShops = new List<CoffeeShop>();
+
+            using (var cnn = new SQLiteConnection(_configuration.GetConnectionString("Default")))
+            {
+                try
+                {
+                    if (string.IsNullOrEmpty(searchTerm))
+                    {
+                        return GetList();
+                    }
+
+                    cnn.Open();
+                    var query = "SELECT * FROM CoffeeShops WHERE Zip =" + searchTerm;
+                    coffeeShops = cnn.Query<CoffeeShop>(query).ToList();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    cnn.Close();
+                }
+                return coffeeShops;
+            }
+        }
     }
 }

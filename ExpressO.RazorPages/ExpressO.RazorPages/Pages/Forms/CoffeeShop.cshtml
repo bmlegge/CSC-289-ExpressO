@@ -50,6 +50,13 @@
     }
 </style>
 
+<form method="get">
+    <p>
+        Search by Zip Code: <input type="text" asp-for="SearchTerm" />
+        <input type="submit" value="Search" />
+    </p>
+</form>
+
 <div class="dropdown">
     <button class="dropbtn">Coffee Shops</button>
     <div class="dropdown-content">
@@ -67,7 +74,10 @@
             <td>@Html.DisplayFor(m => i.Name)</td>
         </tr>
         <tr>
-            <td>@Html.DisplayFor(m => i.Address), @Html.DisplayFor(m => i.City)</td>
+            <td>@Html.DisplayFor(m => i.Address)</td>
+        </tr>
+        <tr>
+            <td> @Html.DisplayFor(m => i.City), @Html.DisplayFor(m => i.Zip)</td>
         </tr>
         <tr>
             <td>@Html.DisplayFor(m => i.Phone)</td>
