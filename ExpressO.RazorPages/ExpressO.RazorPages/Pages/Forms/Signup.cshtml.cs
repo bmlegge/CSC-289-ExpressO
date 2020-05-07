@@ -37,7 +37,7 @@ namespace ExpressO.RazorPages
                 }
             }
 
-            return Page() ;
+            return Page();
         }
     }
 }

@@ -32,10 +32,14 @@ namespace ExpressO.Pages.Forms
         {
             if (ModelState.IsValid)
             {
-                return RedirectToPage("/Forms/CoffeeShop");
+                Login = _loginRepository.Validate(Login.UserName);
+
+
+
+                return RedirectToPage("/About");
             }
 
-            return Page();
+            return RedirectToPage("Error");
         }
 
         public IActionResult OnPostSignup()

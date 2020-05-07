@@ -71,5 +71,59 @@ namespace ExpressO.RazorPages.Repository
                 return logins;
             }
         }
+
+        //public List<Login> Validate(string userName)
+        //{ 
+        //    using (var cnn = new SQLiteConnection(_configuration.GetConnectionString("Default")))
+        //    {
+        //        List<Login> login = new List<Login>();
+        //        try
+        //        {
+        //            if (string.IsNullOrEmpty(userName))
+        //            {
+        //                return GetList();
+        //            }
+
+        //            cnn.Open();
+        //            var query = "SELECT * FROM Login WHERE UserName =" + userName;
+        //            login = cnn.Query<Login>(query).ToList();
+        //        }
+        //        catch(Exception ex)
+        //        {
+        //            throw ex;
+        //        }
+        //        finally
+        //        {
+        //            cnn.Close();
+        //        }
+        //        return login;
+        //    }
+        //}
+
+        public Login Validate(string userName)
+        {
+            using (var cnn = new SQLiteConnection(_configuration.GetConnectionString("Default")))
+            {
+                Login login = new Login();
+                try
+                {
+                    cnn.Open();
+                    var query = "SELECT * FROM Login Where UserName = @UserName";
+                    login = cnn.Query<Login>(query, new { UserName = userName }).FirstOrDefault();
+                    //var query = "SELECT * FROM Login WHERE UserName=" +userName;
+                    //login = cnn.Query<Login>(query).Single();
+
+                }
+                catch(Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    cnn.Close();
+                }
+                return login;
+            }
+        }
     }
 }
