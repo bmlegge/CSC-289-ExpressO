@@ -6,33 +6,67 @@
 
 <h2>Menu</h2>
 
-<div>
-    <div>
-        <table>
-            <tr>
-                <th>Black Coffeee</th>
-                <th>Latte</th>
-                <th>Cappuccino</th>
-                <th>Expresso</th>
-                <th>Macchiato</th>
-                <th>Mocha</th>
-                <th>Iced Coffee</th>
-                <th>Iced Expresso</th>
-                <th>Cold Brew</th>
-                <th>Frappuccino</th>
-            </tr>
-            <tr>
-                <td>@Model.Menu.CoffeeBlack</td>
-                <td>@Model.Menu.Latte</td>
-                <td>@Model.Menu.Cappuccino</td>
-                <td>@Model.Menu.Expresso</td>
-                <td>@Model.Menu.Macchiato</td>
-                <td>@Model.Menu.Mocha</td>
-                <td>@Model.Menu.IcedCoffee</td>
-                <td>@Model.Menu.IcedExpresso</td>
-                <td>@Model.Menu.ColdBrew</td>
-                <td>@Model.Menu.Frappuccino</td>
-            </tr>
+<div class="container">
+    <div class="col-md-6">
+        <table class="table table-striped table-hover col-md-6">
+            <thead>
+                <tr class="warning">
+                    <th><h4>Hot Drinks</h4></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Black Coffee</td>
+                    <td align="right">@Model.Menu.CoffeeBlack</td>
+                </tr>
+                <tr>
+                    <td>Latte</td>
+                    <td align="right">@Model.Menu.Latte</td>
+                </tr>
+                <tr>
+                    <td>Cappuccino</td>
+                    <td align="right">@Model.Menu.Cappuccino</td>
+                </tr>
+                <tr>
+                    <td>Expresso</td>
+                    <td align="right">@Model.Menu.Expresso</td>
+                </tr>
+                <tr>
+                    <td>Macchiato</td>
+                    <td align="right">@Model.Menu.Macchiato</td>
+                </tr>
+                <tr>
+                    <td>Mocha</td>
+                    <td align="right">@Model.Menu.Mocha</td>
+                </tr>
+            </tbody>
         </table>
-    </div>
-</div>
+        <table class="table table-striped table-hover col-md-6">
+            <thead>
+                <tr class="warning">
+                    <th><h4>Cold Drinks</h4></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Iced Coffee</td>
+                    <td align="right">@Model.Menu.IcedCoffee</td>
+                </tr>
+                <tr>
+                    <td>Iced Expresso</td>
+                    <td align="right">@Model.Menu.IcedExpresso</td>
+                </tr>
+                <tr>
+                    <td>Cold Brew</td>
+                    <td align="right">@Model.Menu.ColdBrew</td>
+                </tr>
+                <tr>
+                    <td>Frappuccino</td>
+                    <td align="right">@Model.Menu.Frappuccino</td>
+                </tr>
+            </tbody>
+        </table>
+     </div>
+ </div>
