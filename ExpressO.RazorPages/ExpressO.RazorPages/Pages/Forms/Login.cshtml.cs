@@ -32,14 +32,12 @@ namespace ExpressO.Pages.Forms
         {
             if (ModelState.IsValid)
             {
-                Login = _loginRepository.Validate(Login.UserName);
-
-
+                Login l = _loginRepository.Validate(Login.UserName, Login.Password);
 
                 return RedirectToPage("/About");
             }
 
-            return RedirectToPage("Error");
+            return RedirectToPage("/Error");
         }
 
         public IActionResult OnPostSignup()

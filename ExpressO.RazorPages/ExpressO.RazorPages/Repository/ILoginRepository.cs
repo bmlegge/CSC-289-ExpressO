@@ -8,7 +8,7 @@ namespace ExpressO.RazorPages.Repository
 {
     public interface ILoginRepository
     {
-        Login Validate(string userName);
+        Login Validate(string userName, string password);
         int Add(Login login);
         List<Login> GetList();
     }
