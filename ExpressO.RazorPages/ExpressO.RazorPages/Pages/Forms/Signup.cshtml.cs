@@ -19,7 +19,7 @@ namespace ExpressO.RazorPages
         }
 
         [BindProperty]
-        public Login Login { get; set; }
+        public Signup Signup { get; set; }
 
         public void OnGet()
         {
@@ -30,7 +30,7 @@ namespace ExpressO.RazorPages
         {
             if (ModelState.IsValid)
             {
-                var count = _loginRepository.Add(Login);
+                var count = _loginRepository.Add(Signup);
                 if (count > 0)
                 {
                     return RedirectToPage("/Forms/CoffeeShop");

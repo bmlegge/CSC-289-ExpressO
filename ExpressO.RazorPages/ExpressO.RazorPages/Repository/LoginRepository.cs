@@ -18,7 +18,7 @@ namespace ExpressO.RazorPages.Repository
             _configuration = configuration;
         }
 
-        public int Add(Login login)
+        public int Add(Signup signup)
         {   
             using (var cnn = new SQLiteConnection(_configuration.GetConnectionString("Default")))
             {
@@ -29,11 +29,11 @@ namespace ExpressO.RazorPages.Repository
                                 "VALUES(@UserName, @Password, @FirstName, @LastName, @Email)", 
                                 new
                                 {
-                                    UserName = login.UserName,
-                                    Password = login.Password,
-                                    FirstName = login.FirstName,
-                                    LastName = login.LastName,
-                                    Email = login.Email
+                                    UserName = signup.UserName,
+                                    Password = signup.Password,
+                                    FirstName = signup.FirstName,
+                                    LastName = signup.LastName,
+                                    Email = signup.Email
                                 });
                     return q;
                 }
@@ -48,16 +48,16 @@ namespace ExpressO.RazorPages.Repository
             }
         }
 
-        public List<Login> GetList()
+        public List<Signup> GetList()
         {
-            List<Login> logins = new List<Login>();
+            List<Signup> logins = new List<Signup>();
 
             using (var cnn = new SQLiteConnection(_configuration.GetConnectionString("Default")))
             {
                 try
                 {
                     cnn.Open();
-                    logins = cnn.Query<Login>("SELECT * FROM Login").ToList();
+                    logins = cnn.Query<Signup>("SELECT * FROM Login").ToList();
                 }
                 catch(Exception ex)
                 {

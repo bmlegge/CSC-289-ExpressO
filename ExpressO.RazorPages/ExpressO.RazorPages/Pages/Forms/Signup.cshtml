@@ -6,43 +6,57 @@
 
 <h2>Signup</h2>
 
-<form class="form-horizontal" method="post">
-    <fieldset>
-        <div class="form-group">
-            <label asp-for="Login.FirstName" class="col-lg-2 control-label">First Name</label>
-            <div class="col-lg-10">
-                <input type="text" class="form-control" asp-for="Login.FirstName" placeholder="First Name">
-            </div>
+<div class="container-fluid">
+    <form class="form-horizontal" method="post">
+        <div class="col-md-8">
+            <fieldset>
+                <div class="form-group">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <label asp-for="Signup.FirstName" class="col-lg-2 control-label">First Name</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" asp-for="Signup.FirstName" placeholder="First Name">
+                    </div>
+                    <span asp-validation-for="Signup.FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <label asp-for="Signup.LastName" class="col-lg-2 control-label">Last Name</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" asp-for="Signup.LastName" placeholder="Last Name">
+                    </div>
+                    <span asp-validation-for="Signup.LastName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <label asp-for="Signup.Email" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" asp-for="Signup.Email" placeholder="Email">
+                    </div>
+                    <span asp-validation-for="Signup.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <label asp-for="Signup.UserName" class="col-lg-2 control-label">Username</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" asp-for="Signup.UserName" placeholder="Username">
+                    </div>
+                    <span asp-validation-for="Signup.UserName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <label asp-for="Signup.Password" class="col-lg-2 control-label">Password</label>
+                    <div class="col-lg-10">
+                        <input type="password" class="form-control" asp-for="Signup.Password" placeholder="Password">
+                    </div>
+                    <span asp-validation-for="Signup.Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                        <button type="reset" class="btn btn-default">Reset Form</button>
+                    </div>
+                </div>
+            </fieldset>
         </div>
-        <div class="form-group">
-            <label asp-for="Login.LastName" class="col-lg-2 control-label">Last Name</label>
-            <div class="col-lg-10">
-                <input type="text" class="form-control" asp-for="Login.LastName" placeholder="Last Name">
-            </div>
-        </div>
-        <div class="form-group">
-            <label asp-for="Login.Email" class="col-lg-2 control-label">Email</label>
-            <div class="col-lg-10">
-                <input type="text" class="form-control" asp-for="Login.Email" placeholder="Email">
-            </div>
-        </div>
-        <div class="form-group">
-            <label asp-for="Login.UserName" class="col-lg-2 control-label">Username</label>
-            <div class="col-lg-10">
-                <input type="text" class="form-control" asp-for="Login.UserName" placeholder="Username">
-            </div>
-        </div>
-        <div class="form-group">
-            <label asp-for="Login.Password" class="col-lg-2 control-label">Password</label>
-            <div class="col-lg-10">
-                <input type="password" class="form-control" asp-for="Login.Password" placeholder="Password">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-lg-10 col-lg-offset-2">
-                <button type="submit" class="btn btn-primary">Sign Up</button>
-                <button type="reset" class="btn btn-default">Reset Form</button>
-            </div>
-        </div>
-    </fieldset>
-</form>
+    </form>
+</div>

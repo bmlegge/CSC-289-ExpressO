@@ -18,12 +18,16 @@ namespace ExpressO.Pages.Forms
             _loginRepository = loginRepository;
         }
         [BindProperty]
-        public List<Login> LoginList { get; set; }
+        public List<Signup> SignupList { get; set; }
 
         public void OnGet()
         {
-            LoginList = _loginRepository.GetList();
+            SignupList = _loginRepository.GetList();
         }
+
+        [TempData]
+        public string Message { get; set; }
+        public bool ShowMessage => !string.IsNullOrEmpty(Message);
 
         [BindProperty]
         public Login Login { get; set; }
@@ -34,20 +38,20 @@ namespace ExpressO.Pages.Forms
             {
                 Login l = _loginRepository.Validate(Login.UserName, Login.Password);
 
-                return RedirectToPage("/About");
+                if(l != null)
+                {
+                    return RedirectToPage("/Forms/CoffeeShop");
+                }
+                Message = "Invalid data!";
+                return Page();
             }
 
-            return RedirectToPage("/Error");
+            return Page();
         }
 
         public IActionResult OnPostSignup()
         {
             return RedirectToPage("Signup");
         }
-
-        //------------------------------------------------------------------------------------------------------------
-        //TODO figure out this line of code to take user input and search database for matching username and password.
-        //(LoginList.SingleOrDefault(x => x.UserName == Login.UserName)
-        //------------------------------------------------------------------------------------------------------------
     }
 }
