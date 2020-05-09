@@ -37,7 +37,7 @@
                     <li><a asp-page="/About">About</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    @if (Context.User.Identity != null && Context.User.Identity.IsAuthenticated && Context.User != null)
+                    @if (User.Identity.Name == "")
                     {
                         <li><button type="submit" class="btn btn-primary">Sign Out</button></li>
                     }
