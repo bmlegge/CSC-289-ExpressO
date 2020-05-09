@@ -8,10 +8,10 @@ namespace ExpressO.RazorPages.Models
 {
     public class Login
     {
-        [Required(ErrorMessage = "Must be username")]
+        [Required(ErrorMessage = "Username is required")]
         public string UserName { get; set; }
 
-        [Required(ErrorMessage = "Must be password")]
+        [Required(ErrorMessage = "Must is required")]
         public string Password { get; set; }
     }
 }
