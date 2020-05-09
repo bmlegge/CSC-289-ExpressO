@@ -30,7 +30,7 @@ namespace ExpressO.RazorPages.Repository
                                 new
                                 {
                                     UserName = signup.UserName,
-                                    Password = signup.Password,
+                                    Password = Hash.Hash.CreateHash(signup.Password),
                                     FirstName = signup.FirstName,
                                     LastName = signup.LastName,
                                     Email = signup.Email
@@ -72,11 +72,13 @@ namespace ExpressO.RazorPages.Repository
             }
         }
 
-        public Login Validate(string userName, string password)
+        public Login Validate(string userName, string pswrd)
         {
             using (var cnn = new SQLiteConnection(_configuration.GetConnectionString("Default")))
             {
                 Login login = new Login();
+
+                string password = Hash.Hash.CreateHash(pswrd);
 
                 try
                 {

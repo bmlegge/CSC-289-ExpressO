@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ExpressO.RazorPages.Models;
 using ExpressO.RazorPages.Repository;
+using ExpressO.RazorPages.Hash;
 
 namespace ExpressO.RazorPages
 {
@@ -31,9 +32,10 @@ namespace ExpressO.RazorPages
             if (ModelState.IsValid)
             {
                 var count = _loginRepository.Add(Signup);
+
                 if (count > 0)
                 {
-                    return RedirectToPage("/Forms/CoffeeShop");
+                    return RedirectToPage("/Forms/Login");
                 }
             }
 
