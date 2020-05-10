@@ -22,6 +22,9 @@ namespace ExpressO.RazorPages
         [BindProperty]
         public Signup Signup { get; set; }
 
+        [TempData]
+        public string Message { get; set; }
+
         public void OnGet()
         {
 

@@ -3,6 +3,16 @@
 @{
     ViewData["Title"] = "CoffeeShops";
 }
+
+<style>
+    img{
+        width:100%;
+        height:auto;
+    }
+</style>
+
+
+
 <div class="container-fluid">
     <form class="navbar-form navbar-right" method="get">
         <div class="form-group">
@@ -12,21 +22,32 @@
     </form>
 </div>
 
-
-<div class="container-fluid">
-
+<div class="container">
     @foreach (var i in Model.CoffeeShopList)
     {
         <div class="well">
-
-            <div><h3>@i.Name</h3></div>
-            <div>@i.Address</div>
-            <div>@i.City, @i.Zip</div>
-            <div>@i.Phone</div>
-            <div>
-                <a asp-page="/Forms/Menu" asp-route-id="@i.Id">Menu</a>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>@i.Name</h2>
+                    <p>@i.Address</p>
+                    <p>@i.City, @i.Zip</p>
+                    <p>@i.Phone</p>
+                    <p><a asp-page="/Forms/Menu" asp-route-id="@i.Id">Menu</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Hours</h2>
+                    <p>@i.Sunday</p>
+                    <p>@i.Monday</p>
+                    <p>@i.Tuesday</p>
+                    <p>@i.Wednesday</p>
+                    <p>@i.Thursday</p>
+                    <p>@i.Friday</p>
+                    <p>@i.Saturday</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="~/images/coffeeShop1.jpg" />
+                </div>
             </div>
-        
         </div>
     }
 </div>

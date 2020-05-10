@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ExpressO.RazorPages.Models;
 using ExpressO.RazorPages.Repository;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -42,7 +43,7 @@ namespace ExpressO.Pages.Forms
                 {
                     return RedirectToPage("/Forms/CoffeeShop");
                 }
-                Message = "Invalid data!";
+
                 return Page();
             }
 

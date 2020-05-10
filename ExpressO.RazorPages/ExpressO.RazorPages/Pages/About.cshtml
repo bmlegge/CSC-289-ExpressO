@@ -3,7 +3,29 @@
 @{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<div class="jumbotron">
+    <center><h1>Expresso</h1></center>
+    <p>
+        Expresso offers customers the opportunity to search coffee shops for their favorite beverage from their
+        phone, computer, or tablet.  We provide the ability to not only find your favorite coffee from your
+        favorite coffee shops, but we give customers the advantage of being able to place an order and receive
+        their hot (or cold) cup of joe the moment they walk in.
+    </p>
+</div>
+<div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <img src="~/images/hotCoffee.jpg" />
+    </div>
+    <div class="col-md-4"></div>
+</div>
+
+

@@ -32,7 +32,7 @@ namespace ExpressO.RazorPages
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddSession();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddTransient<ILoginRepository, LoginRepository>();
@@ -57,6 +57,7 @@ namespace ExpressO.RazorPages
             app.UseCookiePolicy();
 
             app.UseMvc();
+            app.UseSession();
         }
     }
 }
