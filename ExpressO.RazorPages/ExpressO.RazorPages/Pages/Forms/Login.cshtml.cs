@@ -18,6 +18,7 @@ namespace ExpressO.Pages.Forms
         {
             _loginRepository = loginRepository;
         }
+
         [BindProperty]
         public List<Signup> SignupList { get; set; }
 
