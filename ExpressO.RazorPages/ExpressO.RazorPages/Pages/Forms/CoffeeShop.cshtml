@@ -11,8 +11,6 @@
     }
 </style>
 
-
-
 <div class="container-fluid">
     <form class="navbar-form navbar-right" method="get">
         <div class="form-group">
@@ -21,6 +19,14 @@
         <button type="submit" class="btn btn-primary">Search</button>
     </form>
 </div>
+
+@if(Model.Msg != null)
+{
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <center>Welcome user @Model.Msg</center>
+    </div>
+}
 
 <div class="container">
     @foreach (var i in Model.CoffeeShopList)

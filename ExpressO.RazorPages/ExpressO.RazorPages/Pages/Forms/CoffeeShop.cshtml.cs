@@ -18,6 +18,9 @@ namespace ExpressO.RazorPages.Pages.Forms
             _coffeeShopRepository = coffeeShopRepository;
         }
 
+        [TempData]
+        public string Msg { get; set; }
+
         [BindProperty]
         public List<CoffeeShop> CoffeeShopList { get; set; }
 

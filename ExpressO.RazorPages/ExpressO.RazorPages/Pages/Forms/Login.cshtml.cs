@@ -31,6 +31,10 @@ namespace ExpressO.Pages.Forms
         public string Message { get; set; }
         public bool ShowMessage => !string.IsNullOrEmpty(Message);
 
+        [TempData]
+        public string Msg { get; set; }
+        public bool LoginMessage => !string.IsNullOrEmpty(Msg);
+
         [BindProperty]
         public Login Login { get; set; }
 
@@ -42,9 +46,11 @@ namespace ExpressO.Pages.Forms
 
                 if(l != null)
                 {
+                    Msg = l.UserName;
                     return RedirectToPage("/Forms/CoffeeShop");
                 }
 
+                Message = "Invalid username/password entered";
                 return Page();
             }
 
