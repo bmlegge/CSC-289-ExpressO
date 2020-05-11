@@ -21,15 +21,15 @@ namespace ExpressO.RazorPages.Models
         [RegularExpression("^((?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])|(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[^a-zA-Z0-9])|(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[^a-zA-Z0-9])|(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^a-zA-Z0-9])).{8,}$", ErrorMessage = "Passwords must be at least 16 characters and contain 3 of 4: upper case, lower case, number and special character.")]
         public string Password { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "First name is required")]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Last name is required")]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Email is required")]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }

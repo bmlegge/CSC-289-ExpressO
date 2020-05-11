@@ -50,7 +50,7 @@ namespace ExpressO.Pages.Forms
                     return RedirectToPage("/Forms/CoffeeShop");
                 }
 
-                Message = "Invalid username/password entered";
+                Message = "Invalid username or password";
                 return Page();
             }
 
