@@ -148,3 +148,4 @@ E:\Ftcc\Spring20\CSC-289\Projects\Fresh\ExpressO.RazorPages\ExpressO.RazorPages\
 C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\ExpressO.RazorPages\ExpressO.RazorPages\obj\Debug\netcoreapp2.1\Razor\Pages\Forms\Menu.cshtml.g.cs
 E:\Ftcc\Spring20\CSC-289\Projects\CSC-289-ExpressO\ExpressO.RazorPages\ExpressO.RazorPages\obj\Debug\netcoreapp2.1\Razor\Index.g.cshtml.cs
 E:\Ftcc\Spring20\CSC-289\Projects\CSC-289-ExpressO\ExpressO.RazorPages\ExpressO.RazorPages\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_DisplayUserNamePartial.g.cshtml.cs
+C:\Users\Null\Documents\GitHub\CSC-289-ExpressO\ExpressO.RazorPages\ExpressO.RazorPages\obj\Debug\netcoreapp2.1\Razor\Index.cshtml.g.cs
