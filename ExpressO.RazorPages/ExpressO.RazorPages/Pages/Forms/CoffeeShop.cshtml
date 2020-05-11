@@ -45,7 +45,26 @@
                     <p>@i.Saturday</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="~/images/coffeeShop1.jpg" />
+                    @if (i.Name == "Grind House")
+                    {
+                        <img src="~/images/coffeeShop1.jpg" />
+                    }
+                    else if (i.Name == "The Roasted Bean")
+                    {
+                        <img src="~/images/The Roasted Bean.jpg" />
+                    }
+                    else if (i.Name == "The Busy Bean")
+                    {
+                        <img src="~/images/The Busy Bean.jpg" />
+                    }
+                    else if (i.Name == "HuggaMug Cafe")
+                    {
+                        <img src="~/images/HuggaMug Cafe.jpg" />
+                    }
+                    else
+                    {
+                        <img src="~/images/AromaMocha.jpg" />
+                    }
                 </div>
             </div>
         </div>
